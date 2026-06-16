@@ -3,6 +3,7 @@ name: Deploy site to GitHub Pages
 on:
   push:
     branches:
+      - main
       - claude/bodyproject-professional-site-srsbb2
   workflow_dispatch:
 
