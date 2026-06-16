@@ -374,7 +374,9 @@ section {
   padding-top: calc(var(--header-height) + 90px);
   padding-bottom: 100px;
   overflow: hidden;
-  background: var(--gradient-dark);
+  background:
+    linear-gradient(180deg, rgba(11, 11, 13, 0.92) 0%, rgba(11, 11, 13, 0.88) 55%, #0b0b0d 100%),
+    url("img/team-photo.jpg") center 20% / cover no-repeat;
 }
 
 .hero::before {
@@ -792,6 +794,48 @@ section {
 .author-result {
   font-size: 0.8rem;
   color: var(--color-gold);
+}
+
+.transform-card {
+  background: var(--color-card);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.transform-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.transform-card-caption {
+  padding: 22px 26px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.transform-card-caption h4 {
+  font-size: 1rem;
+  margin-bottom: 4px;
+}
+
+.transform-card-caption span {
+  font-size: 0.85rem;
+  color: var(--color-text-muted);
+}
+
+.transform-card-tag {
+  background: var(--gradient-gold);
+  color: #1a1305;
+  font-weight: 700;
+  font-size: 0.85rem;
+  padding: 6px 16px;
+  border-radius: 999px;
+  white-space: nowrap;
 }
 
 .reviews-banner {
